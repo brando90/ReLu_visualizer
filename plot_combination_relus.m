@@ -1,7 +1,7 @@
 function [] = plot_combination_relus( C, W1, W2, B, nb_points )
 % plots sum c_i | w1x + w2y + b |_+ on a sufrace/mesh grid
 x = linspace(-1,1,nb_points);
-y = linspace(1,-1,nb_points);
+y = linspace(-1,1,nb_points);
 [X,Y] = meshgrid(x,y);
 n = length(W1);
 Z = zeros([nb_points,nb_points]);
